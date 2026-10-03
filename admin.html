@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rifa Fácil | Painel Administrativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Rifa Fácil</h1>
+
+        <nav>
+            <a href="index.html">Voltar à Rifa</a>
+        </nav>
+    </header>
+
+    <main class="painel">
+
+        <h2>Painel Administrativo</h2>
+
+        <!-- INDICADORES -->
+
+        <section class="indicadores">
+
+            <div class="card-indicador">
+                <h3>Participantes</h3>
+                <p id="totalParticipantes">0</p>
+            </div>
+
+            <div class="card-indicador">
+                <h3>Valor simulado</h3>
+                <p id="valorArrecadado">R$ 0,00</p>
+            </div>
+
+            <div class="card-indicador">
+                <h3>Números disponíveis</h3>
+                <p id="numerosDisponiveis">0</p>
+            </div>
+
+            <div class="card-indicador">
+                <h3>Números reservados</h3>
+                <p id="numerosReservados">0</p>
+            </div>
+
+            <div class="card-indicador">
+                <h3>Números pagos</h3>
+                <p id="numerosPagos">0</p>
+            </div>
+
+        </section>
+
+        <!-- TABELA DE PARTICIPANTES -->
+
+        <section class="tabela-container">
+
+            <h3>Participantes cadastrados</h3>
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar por nome ou telefone..."
+            >
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Números</th>
+                        <th>Valor</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaParticipantes"></tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>

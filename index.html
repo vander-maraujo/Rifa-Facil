@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rifa Fácil | Sua sorte começa aqui</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Rifa Fácil</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#rifa">Rifas</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="banner">
+            <h2>Sua sorte começa com um número!</h2>
+            <p>Escolha seus números e participe.</p>
+        </section>
+
+        <section id="rifa" class="rifa">
+
+            <h2>Rifa de demonstração</h2>
+
+            <div class="premio">
+
+    <span class="etiqueta-premio">PRÊMIO DA RIFA</span>
+
+    <h3>Cesta Incrível</h3>
+
+    <p class="descricao-premio">
+        Uma cesta especial preparada para você!
+    </p>
+
+    <div class="valor-premio">
+        <span>Valor por número</span>
+        <strong>R$ 5,00</strong>
+    </div>
+
+    <div class="disponibilidade">
+        <span>Números disponíveis:</span>
+        <strong id="disponibilidade">100</strong>
+    </div>
+
+</div>
+
+            <h3>Escolha seus números</h3>
+
+            <div id="numeros" class="grade-numeros"></div>
+
+            
+<div class="resumo">
+    <div id="mensagemSucesso" class="mensagem-sucesso"></div>
+
+    <button id="btnNovaReserva" type="button" style="display: none;">
+        Nova reserva
+    </button>
+
+    <p id="quantidade">Números selecionados: 0</p>
+    <p id="total">Total: R$ 0,00</p>
+
+    <h3>Seus dados</h3>
+
+    <form id="formParticipante">
+
+        <label for="nome">Nome completo</label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            required
+        >
+
+        <label for="telefone">Telefone</label>
+        <input
+            type="tel"
+            id="telefone"
+            placeholder="(11) 99999-9999"
+            required
+        >
+
+        <button type="submit" id="btnContinuar">
+            Continuar
+        </button>
+
+    </form>
+
+</div>
+
+        </section>
+
+        <div id="comprovante" class="comprovante" style="display: none;">
+
+    <h3>RIFA FÁCIL</h3>
+
+    <p>COMPROVANTE DE RESERVA</p>
+
+    <hr>
+
+    <p><strong>Participante:</strong> <span id="comprovanteNome"></span></p>
+
+    <p><strong>Telefone:</strong> <span id="comprovanteTelefone"></span></p>
+
+    <p><strong>Números:</strong> <span id="comprovanteNumeros"></span></p>
+
+    <p><strong>Data:</strong> <span id="comprovanteData"></span></p>
+
+    <hr>
+
+    <h3 id="comprovanteTotal"></h3>
+
+    <p>Reserva registrada — pagamento pendente.</p>
+
+    <button type="button" id="btnImprimir">
+        Imprimir comprovante
+    </button>
+
+</div>
+
+    </main>
+
+    <footer id="sobre">
+        <p>Rifa Fácil - Projeto educacional</p>
+    </footer>
+
+   </main>
+
+<footer id="sobre">
+    <p>Rifa Fácil - Projeto educacional</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
